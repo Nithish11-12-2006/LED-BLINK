@@ -1,4 +1,4 @@
-<img width="1920" height="1200" alt="Screenshot (113)" src="https://github.com/user-attachments/assets/7897e9b2-7734-4c32-b593-5827b594843f" /># LED-BLINK
+# LED-BLINK
 # 💡 Experiment 01 – Interfacing a Digital Output (LED) with ARM Development Board
 
 ### 🎯 **Aim**
