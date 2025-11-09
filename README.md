@@ -5,13 +5,10 @@
 To interface a digital output (LED) to an ARM development board and write a blink code.
 
 ---
-
 ### ⚙️ **Components Required**
 - STM32CubeIDE  
 - NUCLEO ARM Development Board  
-
 ---
-
 ### 🧠 **Theory**
 
 **ARM (Advanced RISC Machine)** is a 32-bit processor architecture developed by ARM Holdings. It is widely used in embedded systems and SoC (System-on-Chip) products. Many semiconductor companies like Samsung, Atmel, and Texas Instruments license ARM architecture to design their own SoCs.
@@ -43,14 +40,11 @@ The **LPC2148**, developed by NXP Semiconductors (Philips), is a 16/32-bit ARM7-
 1. Open **STM32CubeIDE**.
 <img width="1920" height="1200" alt="Screenshot (113)" src="https://github.com/user-attachments/assets/bec65593-67e5-424c-97b2-4dd687a09485" />
 
-
 2. Click **File → New STM32 Project**.
 <img width="692" height="402" alt="image" src="https://github.com/user-attachments/assets/7e0b8214-ac5b-41ae-8085-9146319e36ce" />
 
 3. Select the **target microcontroller** or board and click **Next**.
 <img width="692" height="397" alt="image" src="https://github.com/user-attachments/assets/b519300b-d8b6-41da-b1fe-1955f6aa572d" />
-
-
 
 4. Name the project.
 <img width="692" height="408" alt="image" src="https://github.com/user-attachments/assets/b3c56a6e-8bf1-4f62-82d6-b1ae92bddcf8" />
@@ -77,22 +71,16 @@ The **LPC2148**, developed by NXP Semiconductors (Philips), is a 16/32-bit ARM7-
 <img width="692" height="400" alt="image" src="https://github.com/user-attachments/assets/815eb855-a1c0-49fa-ab5c-207e985851ce" />
     
 ---
-
 ### 💻 **Program**
-
-
 ```c
 #include "main.h"
-
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
-
 int main(void)
 {
     HAL_Init();
     SystemClock_Config();
     MX_GPIO_Init();
-
     while (1)
     {
         HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
